@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hovereffect.css">
+
+
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>                            
+	ul>li{
+    list-style:none;
+}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+/*		background:#0D281A;*/
+		background:url(img/3.jpg);
+		background-size:cover;
+
+}
+
+	.navbar-default {
+		background:url(img/3.jpg);
+		background-size:cover;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: orange;
+	}
+
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+		background:#E9AA71;
+		border-radius:30px;
+	}
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #FFE4B5;
+	border-radius:30px;
+	}
+	.navbar-nav{
+		margin-left:20px;
+	}
+	.footer{
+		height: 300px;
+		background:#000;
+	}
+	.footer>.container>.row p{
+		color:#E9AA71;
+		font-size:30px;
+		margin-top:50px;
+	}
+	.my-logo{
+    display: inline-block;
+    width: 63px;
+    height: 42px;
+    background: url(img/pic.png)  no-repeat;
+    margin-top: 3px;
+	margin-left:10px;
+	}
+	.middle_add_one>.container>.row>.one,.middle_add_one>.container>.row>.two,.middle_add_one>.container>.row>.three{
+		width: 292px;
+		height: 400px;
+		background:#fff;
+		box-shadow:inset -13px 9px 6px 6px rgba(0, 0, 0, 0.1);
+}
+.product{
+	border:2px solid #ddd;
+}
+.demo{
+	width:1250px;
+	height:860px;
+	margin:0 auto;
+	margin-top:26px;
+}
+.welcome .row h1{
+	text-align:center;
+	font-size:58px;
+	font-family:"楷体";
+	color:orange;
+}
+.welcome .jieshao{
+	 text-align: left;
+/*    border: 1px dotted orange;*/
+    width: 1071px;
+    height: 212px;
+    margin: 0 auto;
+    margin-left: -100px;
+	border-radius:15px;
+	padding-top:26px;
+	
+}
+.jieshao{
+	text-indent :50px;
+	font-size:18px;
+	font-weight:bold;
+	line-height:40px;
+}
+
+  </style>
+</head>
+<body>
+<!-- narbar start -->
+<div class="navbar navbar-default" style="background:#020202;">
+	<div class="container">
+<!--第一步：导航条头部=品牌+汉堡包  -->
+		<div class="navbar-header">
+	<div class="logo"> 
+		<a class="my-logo" class="navbar-brand" href="boot_index.html"></a>
+	</div>
+	<a class="navbar-toggle" data-toggle="collapse" href="#menu">					
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</a>
+	</div>
+<!-- 	第二步：导航条的折叠部分	 -->
+		<div id="menu" class="collapse  navbar-collapse">
+<!-- 		左侧的导航菜单-->
+			<ul class="nav navbar-nav">
+				<li><a href="detail.html">百达翡丽</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品介绍 <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">江诗丹顿</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">欧米茄</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">天王表</a></li>
+				  </ul>
+				</li>
+
+				<li><a href="hot_point.html">热点</a></li>
+				<li><a href="#">关于</a></li>
+				<li><a href="#">其他</a></li>
+			</ul>
+<!-- 右侧的导航菜单 -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="login1.html">登录</a></li>
+				<li><a href="register.html">注册</a></li>
+			</ul>
+<!-- 右侧的文本 -->
+			<span class="navbar-text navbar-right">|</span>
+<!--  表单-->
+			<form action="" class="navbar-form navbar-right hidden-xs hidden-sm hidden-md">
+				<div class="form-group has-feedback">
+					<label for="#kw" class="sr-only">搜索关键字</label>
+					<input type="text" class="form-control">
+					<span class="glyphicon glyphicon-search form-control-feedback"></span>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- 轮播图 -->
+<div class="middle">
+	<div class="container">
+		<div class="carousel" id="ad4" data-ride="carousel"data-interval="2000"data-pause="null">
+			<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/310120-106.jpg" >
+			</div>
+			<div class="item ">
+				<img src="img/68436-106.jpg" >
+			</div>
+			<div class="item">
+				<img src="img/310124-106.jpg" >
+			</div>
+			<div class="item">
+				<img src="img/68045-106.jpg" >
+			</div>
+		</div>
+<!-- 上一页、下一页 -->  
+	<a href="#ad4" class="carousel-control left" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a href="#ad4"class="carousel-control right"  data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+<!-- 分页页码 --> 
+		<ul class=" carousel-indicators">
+			<li  data-slide-to="0" data-target="#ad4"class="active"></li>
+			<li data-slide-to="1" data-target="#ad4"></li>
+			<li data-slide-to="2" data-target="#ad4"></li>
+			<li data-slide-to="3" data-target="#ad4"></li>
+		</ul>
+		</div><!-- carousel -->
+	</div><!-- container -->
+</div><!--middle -->
+
+<!-- welcome -->
+<div class="welcome">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>welcome</h1>
+		<div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-4">
+			<p class="jieshao">
+				逾百年来，百达翡丽一直信奉精品哲学，遵守重质不重量、细工慢活的生产原则。主旨只有一个，即追求完美。对于百达翡丽与表的主人而言，每一只表都是独一无二的。自1839年以来，每一只出厂的百达翡丽都有自己的名字，每只表都被记录在案。强烈的精品意识、精湛的工艺、源源不断的创新缔造了举世推崇的百达翡丽品牌。
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-- 栅格 ：产品图片展示<li style="display:inline-black;opacity:1;class=col-md-4 col-sm-4 col-xs-12 mix city mix_all" data-cat="city">-->
+ 
+<div class="demo">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-12  " >
+			<div class="col-md-4 col-sm-6 col-xs-4">
+				<div class="box">
+					<div class="box-img">
+						<img src="img/csm_51102000_670afb9531.png" alt="">
+					</div>
+					<div class="box-content">
+						<h4 class="title">劳力士怀表 </h4>
+						<p class="description">劳力士的前身是“W&D”公司。由德国人汉斯·怀司道福与戴维斯创建。</p>
+						<p class="description">￥2323</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-4">
+				<div class="box">
+					<div class="box-img">
+						<img src="img/csm_52853442103001_0d71d66448.png" alt="">
+					</div>
+					<div class="box-content">
+						<h4 class="title">劳力士腕表</h4>
+						<p class="description">劳力士，一庄重，实用，不显浮华的风格广受成功人士喜爱</p>
+						<p class="description">￥3670</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-4">
+				<div class="box">
+					<div class="box-img">
+						<img src="img/csm_22760552103001_08bb43fa9c.png" alt="">
+					</div>
+					<div class="box-content">
+						<h4 class="title">劳力士贵族手表</h4>
+						<p class="description">格林尼治型||</p>
+						<p class="description">￥2999</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-4">
+				<div class="box">
+					<div class="box-img">
+						<img src="img/csm_E605BG0100105_56edb52b4d.png" alt="">
+					</div>
+					<div class="box-content">
+						<h4 class="title">Apm Monaco耳钉</h4>
+						<p class="description">星星与珍珠,不浮夸的款式才更好看</p>
+						<p class="description">￥2499</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-4">
+				<div class="box">
+					<div class="box-img">
+						<img src="img/csm_R604BG00001XX_3651a81270.png" alt="">
+					</div>
+					<div class="box-content">
+						<h4 class="title">伊泰莲娜</h4>
+						<p class="description">紧跟时尚潮流，以各类色泽的亮丽的合金饰品及纯银饰品打造</p>
+						<p class="description">￥3100</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-4">
+				<div class="box">
+					<div class="box-img">
+						<img src="img/csm_M39BCA0201505_301dc9e2fd.png" alt="">
+					</div>
+					<div class="box-content">
+						<h4 class="title">香奈儿耳钉</h4>
+						<p class="description">走高端路线，造型设计追求简单时尚</p>
+						<p class="description">￥5499</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div><!--container-->
+	</div><!--demo-->
+<div class="product">
+<div class="container">
+<div class="row first" >
+	<div class="col-md-5 col-sm-5 col-xs-12">
+		<div class="hovereffect">
+			<img class="img-responsive" src="img/76081-106.jpg" alt="">
+			<div class="overlay">
+				<h2>欧米茄(Omega)金属手表</h2>
+				<a class="info" href="#">时尚</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-7 col-sm-7 col-xs-12">
+		<p class="letter">欧米茄(Omega)是国际著名制表企业和品牌，英文名omega，代表符号“Ω”。欧米茄(W)是希腊文的第二十四个，也是最后一个字母。它象征着事物的伊始与终极，第一与最后。代表了"完美、极致、卓越、成就"的非凡品质，诠释出欧米茄追寻"卓越品质"的经营理念和"崇尚传统，并勇于创新"的精神风范。
+		欧米茄拥有世界著名的四大系列产品：时尚及外形优雅的星座系列，专为运动爱好者而设计的海马专业潜水系列，作为太空任务指定计时的超霸系列和尊贵典雅的碟飞系列。
+		</p>
+	</div>
+</div>
+<div class="row second">
+	<div class="col-md-5 col-sm-5 col-xs-12">
+		<p class="letter">
+			优雅，是浪琴的基本价值观，品牌以历久传承且不断创新的美学传统作为基础，精致考究与经典设计之间的绝妙平衡淋漓体现在每一枚作品之上，从而缔造出永恒的优雅品位。每款表的灵感都与浪琴表世家的丰富历史息息相关，彰显着优雅风格与科学大胆的技术创新。 作为一个全球性品牌，自成立伊始，浪琴就始终遵循着其固有的传统价值观，在逾 130 多个国家内忠实履行着卓越钟表商的坚定承诺。
+		</p>
+	</div>
+	<div class="col-md-7 col-sm-7 col-12">
+		<div class="hovereffect">
+		<img class="img-responsive" src="imgs/img/311536-106.jpg" alt="">
+		<div class="overlay">
+			<h2>优雅浪琴</h2>
+			<a class="info" href="#">贵族</a>
+		</div>
+	</div>
+	</div>
+</div>
+	
+</div>
+</div>
+</div>
+</div><!--  container-->
+</div><!--  middle_add-two-->
+<!--底部  -->
+<div class="footer">
+<div class="container">
+	<div class="row">
+		<div class="col-md-4"><p>关于我们</p>
+			<ul>
+				<li><a href="#"></a>关于</li>
+				<li><a href="#"></a>关于</li>
+				<li><a href="#"></a>关于</li>
+				<li><a href="#"></a>关于</li>
+			</ul>
+		</div>
+		<div class="col-md-4"><p>关于钟表</p>
+			<ul>
+				<li><a href="#"></a>啦啦啦</li>
+				<li><a href="#"></a>啦啦啦</li>
+				<li><a href="#"></a>啦啦啦</li>
+				
+			</ul>
+		</div>
+		<div class="col-md-4"><p>联系我们</p>
+			<span class="glyphicon glyphicon-phone-alt">010-89327498374</span>
+			<br>
+			<span class="glyphicon glyphicon-map-marker">北京市昌平区史各庄</span>
+			<br>
+			<span class="glyphicon glyphicon-heart-empty">收藏</span>
+		</div>
+	</div><!-- container -->
+</div><!-- footer -->
+
+	
+
+  </div><!-- /.container -->
+</nav>
+<!-- </div><!-- whole --> -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>bootlint.showLintReportForCurrentDocument([])</script>
+</body>
+</html>	

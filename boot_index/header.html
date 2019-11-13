@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+  body{
+	background:url(img/111.jpg) no-repeat; 
+	background-size:cover;
+}
+  .navbar{
+	position:relative;
+	z-index:1000;
+  }
+/*  E3DFE0*/
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+		background:#E9AA71;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: orange;
+/*    background-color:#E9AA71;*/
+	}
+	.navbar-default {
+   
+    border-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #E9AA71;
+    color: #555;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color:#fff;
+}
+.navbar-default{
+	background:#E3DFE0;
+	opacity:0.8;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
+.my-logo{
+    display: inline-block;
+    width: 63px;
+    height: 42px;
+    background: url(img/pic.png)  no-repeat;
+    margin-top: 3px;
+	margin-left:10px;
+	}
+  </style>
+</head>
+<body>
+<div class="navbar">
+<div class="container-fluid">
+		<!-- narbar start -->
+<div class="navbar navbar-default" style="background:# E3DFE0;">
+	<div class="container">
+<!--第一步：导航条头部=品牌+汉堡包  -->
+		<div class="navbar-header">
+	<div class="logo"> 
+		<a class="my-logo" class="navbar-brand" href="boot_index.html"></a>
+	</div>
+
+			<a class="navbar-toggle" data-toggle="collapse" href="#menu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+		</div>
+<!-- 	第二步：导航条的折叠部分	 -->
+		<div id="menu" class="collapse  navbar-collapse" style="background: #E3DFE0;">
+<!-- 		左侧的导航菜单-->
+			<ul class="nav navbar-nav">
+				<li><a href="#">百达翡丽</a></li>
+<!-- 				<li class="active"><a href="#">产品介绍</a></li> -->
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品介绍 <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">江诗丹顿</a></li>
+					<li><a href="#">劳力士</a></li>
+					<li><a href="#">欧米茄</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">真利时</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">天王表</a></li>
+				  </ul>
+				</li>
+				<li><a href="#">热点</a></li>
+				<li><a href="#">关于</a></li>
+			</ul>
+<!-- 右侧的导航菜单 -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+			</ul>
+<!-- 右侧的文本 -->
+			<span class="navbar-text navbar-right">|</span>
+<!-- 右侧的超链接 -->
+<!-- 			<a href="#" class="navbar-link navbar-text navbar-right">查找内容</a> -->
+<!--  表单-->
+				<form action="" class="navbar-form navbar-right hidden-xs hidden-sm hidden-md">
+					<div class="form-group has-feedback">
+						<label for="#kw" class="sr-only">搜索关键字</label>
+						<input type="text" class="form-control">
+						<span class="glyphicon glyphicon-search form-control-feedback"></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>bootlint.showLintReportForCurrentDocument([])</script>
+</body>
+</html>

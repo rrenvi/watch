@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+	body{
+	background:url(img/111.jpg) no-repeat; 
+	background-size:cover;
+}
+  .navbar{
+	position:relative;
+	z-index:1000;
+  }
+/*  E3DFE0*/
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+		background:#E9AA71;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: orange;
+/*    background-color:#E9AA71;*/
+	}
+	.navbar-default {
+   
+    border-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #E9AA71;
+    color: #555;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color:#fff;
+}
+.navbar-default{
+	background:#E3DFE0;
+	opacity:0.8;
+}
+.navbar-default .navbar-nav > li > a {
+     color: #000; 
+}
+h2{
+	color:#fff;
+	text-align:center;
+}
+.panel-heading{
+	font-family:"楷体";
+	font-size:36px;
+	color:lightblue;
+	text-align:center;
+
+}
+.panel-body p{
+	text-indent:18px;
+}
+.my-logo{
+    display: inline-block;
+    width: 63px;
+    height: 42px;
+    background: url(img/pic.png)  no-repeat;
+    margin-top: 3px;
+	margin-left:10px;
+	}
+  </style>
+</head>
+<body>
+<!-- 头部 -->
+	<div class="navbar">
+<div class="container-fluid">
+		<!-- narbar start -->
+<div class="navbar navbar-default" style="background:# E3DFE0;">
+	<div class="container">
+<!--第一步：导航条头部=品牌+汉堡包  -->
+		<div class="navbar-header">
+	<div class="logo"> 
+		<a class="my-logo" class="navbar-brand" href="boot_index.html"></a>
+	</div>
+
+			<a class="navbar-toggle" data-toggle="collapse" href="#menu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+		</div>
+<!-- 	第二步：导航条的折叠部分	 -->
+		<div id="menu" class="collapse  navbar-collapse" style="background: #E3DFE0;">
+<!-- 		左侧的导航菜单-->
+			<ul class="nav navbar-nav">
+				<li><a href="#">百达翡丽</a></li>
+
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品介绍 <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">江诗丹顿</a></li>
+					<li><a href="#">劳力士</a></li>
+					<li><a href="#">欧米茄</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">真利时</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">天王表</a></li>
+				  </ul>
+				</li>
+				<li><a href="#">热点</a></li>
+				<li><a href="#">关于</a></li>
+			</ul>
+<!-- 右侧的导航菜单 -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="login1.html">登录</a></li>
+				<li><a href="#">注册</a></li>
+			</ul>
+<!-- 右侧的文本 -->
+			<span class="navbar-text navbar-right">|</span>
+<!-- 右侧的超链接 -->
+<!-- 			<a href="#" class="navbar-link navbar-text navbar-right">查找内容</a> -->
+<!--  表单-->
+				<form action="" class="navbar-form navbar-right hidden-xs hidden-sm hidden-md">
+					<div class="form-group has-feedback">
+						<label for="#kw" class="sr-only">搜索关键字</label>
+						<input type="text" class="form-control">
+						<span class="glyphicon glyphicon-search form-control-feedback"></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!--百达翡丽的介绍 -->
+<div class="panel panel-warning">
+	<div class="panel-heading">百达翡丽</div>
+  <div class="panel-body">
+	<p>
+    百达翡丽创立于1839年，作为日内瓦最后一家独立制表商，百达翡丽在设计、生产直至装配的整体过程中享受着全面的创新自由，打造出令世人专家交口称赞的全球钟表杰作，并谨遵品牌创始人百达先生(Antoine Norbert de Patek)和翡丽先生(Jean-Adrien Philippe) 的卓越远见，凭借超凡的专业技能，秉承优质的创新传统，百达翡丽至今拥有超越80余项技术专利。</p>
+
+	<p>百达翡丽是“手表中的蓝血贵族”。</p>
+
+	<p>百达翡丽以尝试生产其他品牌表所不具备的优势为动力，并将创新作为传统代代相传。1989年，百达翡丽推出Calibre89以庆祝公司成立150周年，并自豪宣布“这是有史以来最有复杂功能的一款可携带式时计”。其中复活节日期装置、逆行日期指针、万年历设计均在1980年代获得专利。
+
+	对于百达翡丽与表的主人而言，每一只表都是独一无二的。自1839年以来，每一只出厂的百达翡丽都有自己的名字，每只表都被记录在案。强烈的精品意识、精湛的工艺、源源不断的创新缔造了举世推崇的百达翡丽品牌。</p>
+
+  </div>
+</div>
+
+	<!-- 世界三大名表的介绍 -->
+<h2>世界三大名表</h2>
+<div class="row">
+  <div class="col-sm-4 col-md-4 col-xs-12">
+    <div class="thumbnail">
+      <img src="img/011.jpg" alt="">
+      <div class="caption">
+        <h3>百达翡丽(PatekPhilippe)</h3>
+        <p>百达翡丽创立于1839年的百达翡丽是瑞士现存惟一一家完全由家族独立经营的钟表制造商。百达翡丽表一向重视外形设计与制作工序，制表工序全部在日内瓦原厂完成，是全球众多品牌表中惟一一家全部机芯获“日内瓦优质印记”(Geneva Seal)的品牌。</p>
+        <p><a href="#" class="btn btn-primary" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-12">
+    <div class="thumbnail">
+      <img src="img/backimage_scale_1920_800_1507211212874.jpg" alt="">
+      <div class="caption">
+        <h3>江诗丹顿(VacheronConstantin)</h3>
+        <p>江诗丹顿传承了瑞士的传统制表精华，未曾间断，同时也创新了许多制表技术，对制表业有莫大的贡献。江诗丹顿在整个二十世纪推出了多款令人永世难忘的设计。从简约典雅的款式到精雕细琢的复杂设计，从日常佩戴的款式到名贵的钻石腕表，每一款均代表了瑞士高级钟表登峰造极的制表工艺，体现了江诗丹顿在世界钟表业界卓尔不群的地位，及其对技术和美学的追求。历经两个半世纪的风风雨雨，江诗丹顿至今依然是钟表业界最负盛名的品牌之一。</p>
+        <p><a href="#" class="btn btn-primary" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-xs-12">
+    <div class="thumbnail">
+      <img src="img/310114-106.jpg" alt="">
+      <div class="caption">
+        <h3>欧米茄(Omega)</h3>
+        <p>欧米茄(Omega)是国际著名制表企业和品牌，英文名omega，代表符号“Ω”。由路易士·勃兰特始创于1848 年，拥有超过150年的悠久历史。欧米茄(W)是希腊文的第二十四个，也是最后一个字母。它象征着事物的伊始与终极，第一与最后。代表了"完美、极致、卓越、成就"的非凡品质，诠释出欧米茄追寻"卓越品质"的经营理念和"崇尚传统，并勇于创新"的精神风范。</p>
+        <p><a href="#" class="btn btn-primary" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 百达翡丽 -->
+
+	
+
+
+
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>bootlint.showLintReportForCurrentDocument([])</script>
+</body>
+</html>
